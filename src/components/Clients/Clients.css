@@ -1,0 +1,41 @@
+
+#clients{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    padding:30px 0;
+    color: #333333;
+}
+
+#clients h2{
+    font-size: 22px;
+}
+img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+.clientBox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+}
+
+
+.clientBox .amazon{
+    width: 110px;
+    height: 35px;
+}
+.clientBox .boots{
+    width: 90px;
+    height: 45px;
+}
+.clientBox .paypal{
+    width: 120px;
+    height: 30px;
+}
+.clientBox .ms{
+    width: 85px;
+    height: 50px;
+}

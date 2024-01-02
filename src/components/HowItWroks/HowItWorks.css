@@ -1,0 +1,67 @@
+#howItWorks {
+  background-color: #fafafa;
+  border: 1px solid #ddd;
+  padding: 60px;
+}
+
+.workingWrapper {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.sectionHeading {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.sectionHeading h2 {
+  font-size: 30px;
+  font-weight: 600;
+}
+.sectionHeading p {
+  font-size: 22px;
+}
+
+.workingBoxes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+.workingBox {
+  text-align: center;
+}
+
+.workingBox img {
+  width: 135px;
+  display: inline-block;
+}
+
+.workingBox .boxTitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.workingBox .boxTitle span {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #158a73;
+  font-size: 20px;
+  color: #fff;
+  padding-top: 5px;
+  font-weight: 600;
+}
+
+.sinimg{
+    margin-top: -20px;
+}
+
+.workingBox p{
+    font-size: 14px;
+    margin-top: 20px;
+    line-height: 25px;
+}

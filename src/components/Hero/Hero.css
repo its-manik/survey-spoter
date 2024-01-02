@@ -1,0 +1,193 @@
+.hero {
+  background: url("../../assets//background-hero.jpg") no-repeat center
+    center/100%;
+  background-color: rgba(0, 88, 132, 0.5);
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-position: center;
+  min-height: 91vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.hero img {
+  width: 100px;
+}
+
+.hero_content {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.hero_content h1 {
+  font-size: 42px;
+  margin-top: 25px;
+  font-weight: 500;
+}
+
+.hero_content h1 span {
+  font-weight: 700;
+}
+
+.hero_content h2 {
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.hero_content ul{
+  list-style: disc;
+  margin-top: 10px;
+  font-size: 17.5px;
+  line-height: 28px;
+  text-align: left;
+}
+
+
+.signup {
+  background: #fff;
+  width: 550px;
+  border-radius: 3px;
+  margin: 25px auto;
+  text-align: left;
+  padding: 20px 30px;
+}
+
+.signup > h2, .signup > p{
+  text-align: center;
+}
+.signup > h2{
+  text-align: center;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.signup > p{
+  font-size: 14px;
+}
+
+.gender{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  margin-top: 5px;
+}
+
+.gender-box{
+  text-align: center;
+}
+
+.custom-radio input{
+  display: none;
+}
+
+.radio-btn{
+  margin: 10px;
+  width: 115px;
+  height: 130px;
+  border: 1px solid #c7c7c7;
+  display: inline-block;
+  border-radius: 4px;
+  position: relative;
+  text-align: center;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.radio-btn > img{
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 20px;
+  left: -10px;
+  transform: translateY(-50%);
+  border-radius: 50px;
+  padding: 3px;
+  transition: .2s;
+  pointer-events: none;
+  background-color: #348C74;
+  border: 1px solid #ddd;
+  display: none;
+  z-index: 100;
+}
+.radio-btn > .backOfCheck{
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  top: 20px;
+  left: -9px;
+  transform: translateY(-50%);
+  border-radius: 50px;
+  padding: 3px;
+  pointer-events: none;
+  background-color: white;
+  border: 1px solid #ddd;
+}
+
+.radio-btn .gender-pic{
+  max-width: 60px;
+}
+
+.custom-radio > input:checked+.radio-btn{
+  background: #D7F1EC;
+  border: 2px solid #348C74;
+}
+.custom-radio > input:checked+.radio-btn > img{
+  display: block;
+}
+.custom-radio > input:checked+.radio-btn > .backOfCheck{
+  display: none;
+}
+
+.dob > span{
+  display: inline-block;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+.dob-inputs{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.dob select{
+  padding: 17px 10px;
+  width: 140px;
+  border: 1px solid #dedede;
+  border-radius: 4px;
+}
+
+.btn-pink {
+  border-radius: 0.2em;
+  box-sizing: border-box;
+  box-shadow: inset 0 -0.6em 1em -0.35em rgba(0,0,0,0.17), inset 0 0.6em 2em -0.3em rgba(255,255,255,0.15), inset 0 0 0em 0.05em rgba(255,255,255,0.12);
+  display: inline-block;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  padding: 16px;
+  font-size: 22px;
+  font-weight: 600;
+}
+.btn-pink {
+  background-color: #df4f71;
+  color: #fff!important;
+}
+
+.signup-notice{
+  display: inline-block;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 600;
+  width: 100%;
+  margin: auto
+}

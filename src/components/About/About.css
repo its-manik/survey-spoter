@@ -1,0 +1,40 @@
+.aboutWrapper {
+    width: 60%;
+    margin: 0 auto;
+    padding: 80px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 120px;
+}
+
+.aboutTop, .aboutBottom{
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    gap: 120px;
+}
+
+.aboutTop > .aboutLeft{
+    flex: 1;
+}
+.aboutTop > .aboutRight{
+    flex: 1;
+}
+.aboutBottom > .aboutLeft{
+    flex: 1;
+}
+.aboutBottom > .aboutRight{
+    flex: 1;
+}
+
+
+.aboutTop h2, .aboutBottom h2{
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.aboutTop p, .aboutBottom p{
+    font-size: 18px;
+    line-height: 32px;
+    margin-bottom: 10px;
+}
