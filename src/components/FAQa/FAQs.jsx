@@ -11,8 +11,8 @@ const FAQs = () => {
   return (
     <section id="faqs">
       <div className="sectionHeading">
-        <h2>How It Wroks</h2>
-        <p>It couldn't be easier. Just follow these simple steps</p>
+        <h2>FAQs</h2>
+        <p>Frequently Asked Questions</p>
       </div>
 
       <div className="flex flex-col items-center justify-center">

@@ -8,8 +8,12 @@
 
 nav{
     padding: 20px 0;
-    position: relative;
+    position: sticky;
     z-index: 1000;
+    top: 0;
+    background: #fff;
+    box-shadow: 0 8px 44px -10px rgba(0,22,89,.2);
+    -webkit-box-shadow: 0 8px 44px -10px rgba(0,22,89,.2);
 }
 
 .logo{

@@ -3,7 +3,7 @@
     url("../../assets/cta-bg-small.jpg");
   position: relative;
   height: 33vh;
-  background-position: top center;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -15,8 +15,9 @@
 }
 
 #started > div h2 {
-  font-size: 32px;
-  margin-bottom: 30px;
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 35px;
 }
 #started > div button {
   border: 1px solid white;
