@@ -1,18 +1,24 @@
 import React, { useState } from "react";
-import { FaCircleCheck, FaCircle, FaC } from "react-icons/fa6";
+import { FaCircleCheck, FaCircle } from "react-icons/fa6";
 import { IoMdArrowDropleft } from "react-icons/io";
-const Button = ({ setselectAll, icon, ...props }) => {
-
-
+const Button = ({ setselectAll, setselected, icon, selected, ...props }) => {
+  const [setSelect, setsetSelected] = useState(false);
 
   return (
     <button {...props}>
       {icon}
-      <span>{setselectAll ? "SELECTED" : "SECELCT"}</span>
-      <button className="innerBtn">
-        <IoMdArrowDropleft />
-        <span>Click here</span>
-      </button>
+
+      {setselectAll || selected ? (
+        <span>SELECTED</span>
+      ) : (
+        <>
+          <span>SELECT</span>
+          <button className="innerBtn">
+            <IoMdArrowDropleft />
+            <span>Click here</span>
+          </button>
+        </>
+      )}
     </button>
   );
 };

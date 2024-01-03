@@ -4,31 +4,25 @@ import Button from "./Button";
 const ListBox = ({ data, setselectAll, ...props }) => {
   const { img, heading, list, smallText, review } = data;
 
+  console.log(setselectAll);
+
   const [selected, setSelected] = useState(false);
   return (
     <div className={`listBox`} {...props}>
       <Button
-        selected={selected}
-        icon={
-          setselectAll ? (
-            <FaCircleCheck />
-          ) : selected ? (
-            <FaCircleCheck />
-          ) : (
-            <FaCircle />
-          )
-        }
         className={`boxButton ${setselectAll ? "selected" : ""}`}
         onClick={(e) => {
           if (e.target.classList.contains("selected")) {
             e.target.classList.remove("selected");
-            return setSelected(false);
+            return setSelected(false)
           } else {
             e.target.classList.add("selected");
-            return setSelected(true);
+            return setSelected(true)
           }
-          console.log(selected);
         }}
+        selected={selected}
+        setselectAll={setselectAll}
+        icon={setselectAll || selected ?<FaCircleCheck /> : <FaCircle />}
       />
       <div className="listFlex">
         <div className="listImg">
