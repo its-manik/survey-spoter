@@ -1,0 +1,199 @@
+.lastHero {
+  background-image: url(../assets/confirmation-bg.webp);
+  height: 35vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Helvetica, arial sans-serif;
+}
+
+.lastHeroContent {
+  width: 45%;
+}
+
+.lastHeroContent h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+  font-weight: 600;
+  line-height: 40px;
+}
+
+.lastHeroContent h2 {
+  font-size: 18px;
+  font-weight: 200;
+  line-height: 22px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.lastHeroContent h2 span {
+  font-weight: 600;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.lastHeroContent button {
+  margin: 10px;
+  background-color: #c64756;
+  display: inline-block;
+  padding: 15px 30px;
+  border-radius: 4px;
+  font-size: 125%;
+  font-weight: bold;
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
+  margin-top: 30px;
+}
+
+.finalStep > div {
+  width: 40%;
+  margin: auto;
+  padding: 40px 0;
+}
+
+.stepHeading {
+  text-align: center;
+}
+
+.stepHeading h2 {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.stepHeading h2::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -20px;
+  transform: translateX(-50%);
+  width: 90px;
+  border-radius: 4px;
+  height: 4px;
+  background: #45b29b;
+}
+
+.stepHeading span {
+  font-size: 19px;
+  counter-reset: #333;
+  font-weight: 200;
+}
+
+.stepLists {
+  padding: 20px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.step{
+    display: flex;
+    gap: 20px;
+}
+
+.step > .number{
+    width: 38px;
+    height: 38px;
+    background: #45B29B;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    padding: 43px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 50px;
+}
+
+.stepContent{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+}
+
+.step h2, .step a{
+    font-size: 21px;
+    font-weight: 500;
+}
+
+.step a{
+    text-decoration: underline;
+    color: #45b29b;
+}
+
+@media screen and (max-width: 1600px) {
+  .lastHero {
+    height: 40vh;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .listBoxes {
+    width: 70%;
+  }
+  .lastHero {
+    height: 40vh;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .lastHero {
+    height: 40vh;
+  }
+
+  .lastHeroContent {
+    width: 88%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .lastHeroContent button {
+    margin: 10px;
+    background-color: #c64756;
+    display: inline-block;
+    padding: 15px 30px;
+    border-radius: 4px;
+    font-size: 125%;
+    font-weight: bold;
+    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+      0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+      0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086);
+  }
+  .lastHeroContent button:hover {
+    background-color: #369180;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .lastHero {
+    height: 30vh;
+  }
+
+  .lastHeroContent {
+    width: 98%;
+  }
+
+  .lastHeroContent h1 {
+    font-size: 26px;
+    margin-bottom: 5px;
+  }
+
+  .lastHeroContent h2 {
+    font-size: 18px;
+    font-weight: 200;
+    line-height: 25px;
+  }
+
+  .lastHeroContent h2 span {
+    font-weight: 600;
+    margin-top: 15px;
+    display: inline-block;
+  }
+}

@@ -17,8 +17,19 @@ import green from "../assets/green.webp";
 import maxi from "../assets/maxi.webp";
 import inboxx from "../assets/inbox.webp";
 import star from "../assets/stars-4.5.svg";
+import { FaCircle, FaCircleCheck } from "react-icons/fa6";
+import { IoMdArrowDropleft } from "react-icons/io";
+import { useNavigate } from "react-router-dom";
 
 const Offer = () => {
+  const navigate = useNavigate();
+
+  const [setselectAll, setSetselectAll] = useState(false);
+
+  const finalStep = () => {
+    return navigate("/laststep");
+  };
+
   return (
     <>
       <Navbar />
@@ -41,10 +52,22 @@ const Offer = () => {
           <h2>
             <span>SELECT ALL</span> & Earn £300 per month
           </h2>
-          <button>Select All</button>
+          <a href="#final">
+            <button
+              className={`allButton ${setselectAll ? "selected" : ""}`}
+              onClick={() => {
+                setSetselectAll(!setselectAll);
+              }}
+            >
+              {!setselectAll ? <FaCircle /> : <FaCircleCheck />}{" "}
+              <span>{setselectAll ? "SELECTED" : "SELECT ALL"}</span>
+            </button>
+          </a>
         </div>
         <div className="listBoxes">
           <ListBox
+          setselectAll={setselectAll}
+            className={`${setselectAll ? "listBox selected" : "listBox"}`}
             data={{
               img: YouGov,
               heading: "Share your opinion with YouGov and get rewarded",
@@ -58,6 +81,8 @@ const Offer = () => {
             }}
           />
           <ListBox
+          setselectAll={setselectAll}
+            className={`${setselectAll ? "listBox selected" : "listBox"}`}
             data={{
               img: branded,
               review: star,
@@ -73,6 +98,8 @@ const Offer = () => {
             }}
           />
           <ListBox
+          setselectAll={setselectAll}
+            className={`${setselectAll ? "listBox selected" : "listBox"}`}
             data={{
               img: mobrog,
               review: star,
@@ -87,6 +114,8 @@ const Offer = () => {
             }}
           />
           <ListBox
+          setselectAll={setselectAll}
+            className={`${setselectAll ? "listBox selected" : "listBox"}`}
             data={{
               img: pureprofile,
               heading: "Join Pureprofile: What you discover will amaze you.",
@@ -100,6 +129,8 @@ const Offer = () => {
             }}
           />
           <ListBox
+          setselectAll={setselectAll}
+            className={`${setselectAll ? "listBox selected" : "listBox"}`}
             data={{
               img: toluna,
               heading: "Influence your world - Join Toluna today",
@@ -113,6 +144,8 @@ const Offer = () => {
             }}
           />
           <ListBox
+          setselectAll={setselectAll}
+            className={`${setselectAll ? "listBox selected" : "listBox"}`}
             data={{
               img: prime,
               heading: "Get paid for taking free surveys",
@@ -126,6 +159,8 @@ const Offer = () => {
             }}
           />
           <ListBox
+          setselectAll={setselectAll}
+            className={`${setselectAll ? "listBox selected" : "listBox"}`}
             data={{
               img: cashback,
               review: star,
@@ -141,6 +176,8 @@ const Offer = () => {
             }}
           />
           <ListBox
+          setselectAll={setselectAll}
+            className={`${setselectAll ? "listBox selected" : "listBox"}`}
             data={{
               img: dosh,
               review: star,
@@ -155,6 +192,8 @@ const Offer = () => {
             }}
           />
           <ListBox
+          setselectAll={setselectAll}
+            className={`${setselectAll ? "listBox selected" : "listBox"}`}
             data={{
               img: view,
               review: star,
@@ -170,6 +209,8 @@ const Offer = () => {
             }}
           />
           <ListBox
+          setselectAll={setselectAll}
+            className={`${setselectAll ? "listBox selected" : "listBox"}`}
             data={{
               img: maxi,
               review: star,
@@ -184,6 +225,8 @@ const Offer = () => {
             }}
           />
           <ListBox
+          setselectAll={setselectAll}
+            className={`${setselectAll ? "listBox selected" : "listBox"}`}
             data={{
               img: isay,
               review: star,
@@ -199,6 +242,8 @@ const Offer = () => {
             }}
           />
           <ListBox
+          setselectAll={setselectAll}
+            className={`${setselectAll ? "listBox selected" : "listBox"}`}
             data={{
               img: inboxx,
               heading:
@@ -213,6 +258,8 @@ const Offer = () => {
             }}
           />
           <ListBox
+          setselectAll={setselectAll}
+            className={`${setselectAll ? "listBox selected" : "listBox"}`}
             data={{
               img: swagbucks,
               review: star,
@@ -227,6 +274,8 @@ const Offer = () => {
             }}
           />
           <ListBox
+          setselectAll={setselectAll}
+            className={`${setselectAll ? "listBox selected" : "listBox"}`}
             data={{
               img: green,
               heading: "Join GreenPanthera TODAY!",
@@ -240,18 +289,25 @@ const Offer = () => {
             }}
           />
         </div>
-      <div className="final">
-            <p>* Estimation based on completing 2-3 surveys per day (about an hours work per day)</p>
-            <button>CONTINUE TO FINAL STEP</button>
-      </div>
+        <div className="final" id="final">
+          <p>
+            * Estimation based on completing 2-3 surveys per day (about an hours
+            work per day)
+          </p>
+          <button type="button" onClick={finalStep}>
+            CONTINUE TO FINAL STEP
+          </button>
+        </div>
       </section>
-      <footer>
+      <footer className="offerFooter">
         <div>
-            <a href="#" className="terms">Terms and Conditions</a>
-            <a href="#">Privacy Policy</a>
+          <a href="#" className="terms">
+            Terms and Conditions
+          </a>
+          <a href="#">Privacy Policy</a>
         </div>
         <p className="corywrite">
-        Copyright Survey Spotter. All rights reserved
+          Copyright Survey Spotter. All rights reserved
         </p>
       </footer>
     </>

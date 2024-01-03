@@ -62,6 +62,37 @@
   font-size: 14px;
 }
 
+.listBox .boxButton {
+  position: absolute;
+  right: 30px;
+  bottom: 90px;
+  background: #408c99;
+  width: 320px;
+  height: 70px;
+  border-radius: 5px;
+  font-size: 20px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.listBox.selected .boxButton {
+  position: absolute;
+  right: 30px;
+  bottom: 90px;
+  background: #5cbf2a;
+  width: 320px;
+  height: 70px;
+  border-radius: 5px;
+  font-size: 20px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
 .boxButton {
   position: absolute;
   right: 30px;
@@ -151,14 +182,14 @@
   margin-bottom: 10px;
 }
 
-.listContent ul li {
+.listContent .ul > div {
   display: flex;
   align-items: center;
   gap: 10px;
-  line-height: 35px;
+  line-height: 28px;
 }
 
-.listContent ul li svg {
+.listContent .ul > div svg {
   fill: #45b29b;
 }
 
@@ -176,115 +207,141 @@
   font-weight: 600;
 }
 
-.listHeading button::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  left: 130px;
-  background: #fff;
-  width: 20px;
-  height: 20px;
-  border-radius: 100%;
-}
-.listHeading button {
-  position: relative;
-  text-align: center;
-  max-width: 400px;
-  width: 400px;
-  margin: 0 auto;
-  padding: 20px 100px;
-  display: block;
+.allButton {
+  background: #408c99;
+  width: 320px;
+  height: 70px;
+  border-radius: 5px;
   font-size: 20px;
-  margin-bottom: 35px;
-  background: rgb(32, 67, 73);
   color: #fff;
-  border-radius: 4px;
-  touch-action: manipulation;
-  cursor: pointer;
-  vertical-align: middle;
-  box-shadow: 0 1px 6px 0 rgb(117 117 117 / 25%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin: 0 auto;
+  margin-bottom: 20px;
 }
 
-.final{
-    text-align: center;
-    margin-top: 20px;
-    width: 60%;
-    margin: 0 auto;
-    margin-top: 20px
+.allButton.selected {
+  background: #5cbf2a;
+  width: 320px;
+  height: 70px;
+  border-radius: 5px;
+  font-size: 20px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
 }
 
-.final button{
-    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2);
-    width: 100%;
-    background: #DF4F71;
-    padding: 17px;
-    border-radius: 7px;
-    color: #fff;
-    font-size: 28px;
-    font-weight: 400;
-    margin-top: 20px;
-    margin-bottom: 20px;
+.final {
+  text-align: center;
+  margin-top: 20px;
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 20px;
 }
 
-.offerFooter{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    padding: 30px 0;
-    background: #313131;
-    color: #fff;
-    overflow-x: hidden;
+.final button {
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  background: #df4f71;
+  padding: 17px;
+  border-radius: 7px;
+  color: #fff;
+  font-size: 28px;
+  font-weight: 400;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
-.offerFooter > div{
-    display: flex;
-    gap: 60px;
+
+.offerFooter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 30px 0;
+  background: #313131;
+  color: #fff;
+  overflow-x: hidden;
+}
+.offerFooter > div {
+  display: flex;
+  gap: 60px;
 }
 
 .offerFooter > div a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
-.terms::bafore{
-    border-right: 1px solid #fff;
+.terms::bafore {
+  border-right: 1px solid #fff;
 }
 
-.corywrite{
-    font-size: 13px;
-    color: #afafaf;
-    font-weight: 600;
+.corywrite {
+  font-size: 13px;
+  color: #afafaf;
+  font-weight: 600;
 }
 
+@media screen and (max-width: 1800px) {
+  .offerHero {
+    height: 40vh;
+  }
+  .listBox{
+    height: 400px;
+  }
+}
 @media screen and (max-width: 1600px) {
   .offerHero {
     height: 40vh;
   }
+  .listBox{
+    height: 400px;
+  }
 }
+
 @media screen and (max-width: 1400px) {
   .listBoxes {
-    width: 70%;
+    width: 90%;
   }
   .offerHero {
     height: 40vh;
   }
 }
 @media screen and (max-width: 1200px) {
-    .offerHero {
-        height: 40vh;
-      }
-    
-      .offerHeroContent {
-        width: 98%;
-      }
+  .offerHero {
+    height: 40vh;
+  }
+
+  .offerHeroContent {
+    width: 98%;
+  }
   .listBoxes {
-    width: 90%;
+    width: 90% !important;
   }
   .listBox {
     height: 450px;
     position: relative;
   }
 
+  .listBox .boxButton {
+    width: 95%;
+    right: 2.5%;
+  }
+  .listBox.selected .boxButton {
+    width: 95%;
+    right: 2.5%;
+  }
+  .boxButton {
+    width: 95%;
+    right: 2.5%;
+  }
+  .boxButton.selected {
+    width: 95%;
+    right: 2.5%;
+  }
   .boxButton {
     width: 95%;
     right: 2.5%;
@@ -309,8 +366,26 @@
   }
 }
 
+@media screen and (max-width: 800px) {
+  .listBox {
+    height: 410px;
+    position: relative;
+    padding: 10px;
+  }
+  .listBox h2{
+    display: none;
+  }
+  .listBox .ul {
+    font-size: 14px;
+    gap: 10px;
+    margin: 0 !important;
+  }
+}
+
 @media screen and (max-width: 600px) {
   .offerHero {
+    background-image: none;
+    background: #4CA796;
     height: 30vh;
   }
 
@@ -332,10 +407,7 @@
   .offerHeroContent h2 span {
     font-weight: 600;
   }
-  .listBox {
-    height: 650px;
-    position: relative;
-  }
+
   .listImg {
     flex-direction: column;
     align-items: center;
@@ -346,22 +418,85 @@
   .boxButton {
     bottom: 20%;
   }
-  .boxButton.selected {
+  /* .boxButton.selected {
     bottom: 20%;
-  }
+  } */
   .listBox > p {
     font-size: 12px;
     font-weight: 500;
   }
-  .final{
+  .final {
     text-align: center;
     margin-top: 20px;
     width: 90%;
     margin: 0 auto;
     margin-top: 20px;
     font-weight: 600;
-}
-.final button{
+  }
+  .final button {
     font-weight: 600;
+  }
 }
+
+
+@media screen and (max-width: 500px) {
+  .listBoxes{
+    width: 90% !important;
+  }
+
+  .listBoxes .listBox:nth-child(1){
+    max-height: 350px;
+  }
+  .listBoxes .listBox:nth-child(2){
+    max-height: 355px;
+  }
+  .listBoxes .listBox:nth-child(3){
+    max-height: 355px;
+  }
+  .listBoxes .listBox:nth-child(8){
+    min-height: 450px;
+  }
+  .listBoxes .listBox:nth-child(9){
+    max-height: 380px;
+    /* min-height: 400px; */
+  }
+  .listBoxes .listBox:nth-child(10){
+    min-height: 470px;
+  }
+  .listBoxes .listBox:nth-child(11){
+    min-height: 470px;
+  }
+  .listBoxes .listBox:nth-child(12){
+    max-height: 390px;
+    /* display: none; */
+  }
+  .listBoxes .listBox:nth-child(14){
+    max-height: 370px;
+    /* display: none; */
+  }
+
+  .listBox{
+    padding: 10px;
+  }
+  .listBox h2{
+    display: none;
+  }
+  
+  .listContent h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .listContent .ul > div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    line-height: 22px;
+  }
+
+
+  
+  .listContent .ul > div svg {
+    fill: #45b29b;
+  }
 }
