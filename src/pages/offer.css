@@ -1,0 +1,367 @@
+.offerHero {
+  background-image: url(../assets/offer-bg.webp);
+  height: 22vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Helvetica, arial sans-serif;
+}
+
+.offerHeroContent {
+  width: 45%;
+}
+
+.offerHeroContent h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.offerHeroContent h2 {
+  font-size: 18px;
+  font-weight: 200;
+  line-height: 35px;
+}
+
+.offerHeroContent h2 span {
+  font-weight: 600;
+}
+.offerLists {
+  background: #f3f3f5;
+  width: 100vw;
+  height: auto;
+}
+
+.listBoxes {
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.listBox {
+  background: #fff;
+  box-shadow: 0 1px 6px 0 rgba(117, 117, 117, 0.25);
+  border-radius: 4px;
+  padding: 0px 40px;
+  min-height: 350px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px 40px;
+}
+
+.listBox > p {
+  text-align: center;
+  font-size: 14px;
+}
+
+.boxButton {
+  position: absolute;
+  right: 30px;
+  bottom: 90px;
+  background: #408c99;
+  width: 320px;
+  height: 70px;
+  border-radius: 5px;
+  font-size: 20px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.boxButton.selected {
+  position: absolute;
+  right: 30px;
+  bottom: 90px;
+  background: #5cbf2a;
+  width: 320px;
+  height: 70px;
+  border-radius: 5px;
+  font-size: 20px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.innerBtn {
+  position: absolute;
+  right: -100px;
+  box-shadow: 0 1px 6px 0 rgba(117, 117, 117, 0.25);
+  display: flex;
+  background: gray;
+  align-items: center;
+  font-size: 14px;
+  padding: 5px 10px;
+  background: white;
+  color: #333;
+}
+
+.listFlex {
+  display: flex;
+}
+
+.listImg {
+  width: 280px;
+}
+
+.listImg > img {
+  width: 180px;
+  margin-bottom: 20px;
+}
+
+.review {
+  font-size: 14px;
+  /* text-align: center; */
+  /* display: flex; */
+  /* align-items: center;
+  justify-content: center;
+  flex-direction: column; */
+  /* margin-right: 60px; */
+  margin-left: 10px;
+}
+
+.review p {
+  margin-left: -15px;
+  margin-bottom: 5px;
+}
+
+.review img {
+  width: 150px;
+}
+
+.listContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.listContent h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.listContent ul li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  line-height: 35px;
+}
+
+.listContent ul li svg {
+  fill: #45b29b;
+}
+
+.listHeading {
+  font-size: 20px;
+  text-align: center;
+  padding-top: 30px;
+}
+
+.listHeading h2 {
+  margin-bottom: 10px;
+}
+
+.listHeading h2 span {
+  font-weight: 600;
+}
+
+.listHeading button::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 130px;
+  background: #fff;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+}
+.listHeading button {
+  position: relative;
+  text-align: center;
+  max-width: 400px;
+  width: 400px;
+  margin: 0 auto;
+  padding: 20px 100px;
+  display: block;
+  font-size: 20px;
+  margin-bottom: 35px;
+  background: rgb(32, 67, 73);
+  color: #fff;
+  border-radius: 4px;
+  touch-action: manipulation;
+  cursor: pointer;
+  vertical-align: middle;
+  box-shadow: 0 1px 6px 0 rgb(117 117 117 / 25%);
+}
+
+.final{
+    text-align: center;
+    margin-top: 20px;
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 20px
+}
+
+.final button{
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    background: #DF4F71;
+    padding: 17px;
+    border-radius: 7px;
+    color: #fff;
+    font-size: 28px;
+    font-weight: 400;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.offerFooter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 30px 0;
+    background: #313131;
+    color: #fff;
+    overflow-x: hidden;
+}
+.offerFooter > div{
+    display: flex;
+    gap: 60px;
+}
+
+.offerFooter > div a:hover {
+    text-decoration: underline;
+}
+
+.terms::bafore{
+    border-right: 1px solid #fff;
+}
+
+.corywrite{
+    font-size: 13px;
+    color: #afafaf;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 1600px) {
+  .offerHero {
+    height: 40vh;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .listBoxes {
+    width: 70%;
+  }
+  .offerHero {
+    height: 40vh;
+  }
+}
+@media screen and (max-width: 1200px) {
+    .offerHero {
+        height: 40vh;
+      }
+    
+      .offerHeroContent {
+        width: 98%;
+      }
+  .listBoxes {
+    width: 90%;
+  }
+  .listBox {
+    height: 450px;
+    position: relative;
+  }
+
+  .boxButton {
+    width: 95%;
+    right: 2.5%;
+  }
+  .boxButton.selected {
+    width: 95%;
+    right: 2.5%;
+  }
+
+  .listImg {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+  }
+
+  .review img {
+    width: 110px;
+  }
+
+  .listFlex {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .offerHero {
+    height: 30vh;
+  }
+
+  .offerHeroContent {
+    width: 98%;
+  }
+
+  .offerHeroContent h1 {
+    font-size: 26px;
+    margin-bottom: 5px;
+  }
+
+  .offerHeroContent h2 {
+    font-size: 18px;
+    font-weight: 200;
+    line-height: 30px;
+  }
+
+  .offerHeroContent h2 span {
+    font-weight: 600;
+  }
+  .listBox {
+    height: 650px;
+    position: relative;
+  }
+  .listImg {
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  .boxButton {
+    bottom: 20%;
+  }
+  .boxButton.selected {
+    bottom: 20%;
+  }
+  .listBox > p {
+    font-size: 12px;
+    font-weight: 500;
+  }
+  .final{
+    text-align: center;
+    margin-top: 20px;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 20px;
+    font-weight: 600;
+}
+.final button{
+    font-weight: 600;
+}
+}

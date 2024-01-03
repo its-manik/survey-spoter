@@ -38,3 +38,44 @@
     line-height: 32px;
     margin-bottom: 10px;
 }
+
+@media screen and (max-width: 1000px) {
+    .aboutWrapper{
+        width: 95%;
+        padding: 40px 30px;
+    }
+
+    .aboutLeft h2, .aboutRight h2{
+        font-size: 18px;
+    }
+    .aboutLeft p, .aboutRightp{
+       font-size: 15px;
+       line-height: 22px;
+    }
+   .aboutWrapper{
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .aboutWrapper{
+        width: 95%;
+        padding: 10px 0;
+    }
+
+    .aboutLeft h2, .aboutRight h2{
+        font-size: 18px;
+    }
+    .aboutLeft p, .aboutRightp{
+       font-size: 15px;
+       line-height: 22px;
+    }
+   .aboutWrapper{
+        gap: 20px;
+    }
+    .aboutTop .aboutRight, .aboutBottom .aboutLeft{
+        display: none;
+    }
+  
+  }

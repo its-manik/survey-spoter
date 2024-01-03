@@ -19,7 +19,7 @@
   font-weight: 700;
   margin-bottom: 35px;
 }
-#started > div button {
+#started > div a {
   border: 1px solid white;
   padding: 10px 40px;
 }

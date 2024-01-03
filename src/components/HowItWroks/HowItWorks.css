@@ -65,3 +65,38 @@
     margin-top: 20px;
     line-height: 25px;
 }
+
+
+@media screen and (max-width: 1200px) {
+  .workingWrapper {
+    width: 100%;
+  }
+  #howItWorks {
+    padding: 60px
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .workingWrapper {
+    width: 100%;
+  }
+  #howItWorks {
+    padding: 60px 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+.workingBoxes{
+  flex-wrap: wrap;
+}
+#howItWorks {
+  padding: 60px 0;
+}
+
+.workingWrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+
+}

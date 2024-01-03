@@ -9,14 +9,14 @@ const FAQs = () => {
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.";
 
   return (
-    <section id="faqs">
+    <section id="">
       <div className="sectionHeading">
         <h2>FAQs</h2>
         <p>Frequently Asked Questions</p>
       </div>
 
       <div className="flex flex-col items-center justify-center">
-        <Accordian className="max-w-[45%]">
+        <Accordian className="">
           <AccordianItem value="1" trigger="How does it work?">
             We have searched the internet for companies who are looking for
             customer feedback and opinions, and want to reward people for

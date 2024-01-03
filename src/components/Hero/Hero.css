@@ -40,14 +40,13 @@
   font-weight: 500;
 }
 
-.hero_content ul{
+.hero_content ul {
   list-style: disc;
   margin-top: 10px;
   font-size: 17.5px;
   line-height: 28px;
   text-align: left;
 }
-
 
 .signup {
   background: #fff;
@@ -58,21 +57,22 @@
   padding: 20px 30px;
 }
 
-.signup > h2, .signup > p{
+.signup > h2,
+.signup > p {
   text-align: center;
 }
-.signup > h2{
+.signup > h2 {
   text-align: center;
   font-size: 22px;
   font-weight: 600;
   margin-bottom: 10px;
 }
 
-.signup > p{
+.signup > p {
   font-size: 14px;
 }
 
-.gender{
+.gender {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -80,15 +80,15 @@
   margin-top: 5px;
 }
 
-.gender-box{
+.gender-box {
   text-align: center;
 }
 
-.custom-radio input{
+.custom-radio input {
   display: none;
 }
 
-.radio-btn{
+.radio-btn {
   margin: 10px;
   width: 115px;
   height: 130px;
@@ -103,7 +103,7 @@
   justify-content: center;
 }
 
-.radio-btn > img{
+.radio-btn > img {
   width: 20px;
   height: 20px;
   position: absolute;
@@ -112,14 +112,14 @@
   transform: translateY(-50%);
   border-radius: 50px;
   padding: 3px;
-  transition: .2s;
+  transition: 0.2s;
   pointer-events: none;
-  background-color: #348C74;
+  background-color: #348c74;
   border: 1px solid #ddd;
   display: none;
   z-index: 100;
 }
-.radio-btn > .backOfCheck{
+.radio-btn > .backOfCheck {
   width: 18px;
   height: 18px;
   position: absolute;
@@ -133,33 +133,34 @@
   border: 1px solid #ddd;
 }
 
-.radio-btn .gender-pic{
+.radio-btn .gender-pic {
   max-width: 60px;
 }
 
-.custom-radio > input:checked+.radio-btn{
-  background: #D7F1EC;
-  border: 2px solid #348C74;
+.custom-radio > input:checked + .radio-btn {
+  background: #d7f1ec;
+  border: 2px solid #348c74;
 }
-.custom-radio > input:checked+.radio-btn > img{
+.custom-radio > input:checked + .radio-btn > img {
   display: block;
 }
-.custom-radio > input:checked+.radio-btn > .backOfCheck{
+.custom-radio > input:checked + .radio-btn > .backOfCheck {
   display: none;
 }
 
-.dob > span{
+.dob > span {
   display: inline-block;
   margin-bottom: 10px;
   font-size: 14px;
 }
-.dob-inputs{
+.dob-inputs {
   display: flex;
   justify-content: space-between;
   margin-bottom: 5px;
+  gap: 15px;
 }
 
-.dob select{
+.dob select {
   padding: 17px 10px;
   width: 140px;
   border: 1px solid #dedede;
@@ -169,7 +170,9 @@
 .btn-pink {
   border-radius: 0.2em;
   box-sizing: border-box;
-  box-shadow: inset 0 -0.6em 1em -0.35em rgba(0,0,0,0.17), inset 0 0.6em 2em -0.3em rgba(255,255,255,0.15), inset 0 0 0em 0.05em rgba(255,255,255,0.12);
+  box-shadow: inset 0 -0.6em 1em -0.35em rgba(0, 0, 0, 0.17),
+    inset 0 0.6em 2em -0.3em rgba(255, 255, 255, 0.15),
+    inset 0 0 0em 0.05em rgba(255, 255, 255, 0.12);
   display: inline-block;
   width: 100%;
   margin-top: 10px;
@@ -180,14 +183,138 @@
 }
 .btn-pink {
   background-color: #df4f71;
-  color: #fff!important;
+  color: #fff !important;
 }
 
-.signup-notice{
+.signup-notice {
   display: inline-block;
   text-align: center;
   font-size: 12px;
   font-weight: 600;
   width: 100%;
-  margin: auto
+  margin: auto;
+}
+
+.inputBox {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.email {
+  width: 100%;
+  margin-bottom: 15px;
+}
+.email input {
+  width: 100%;
+  padding: 16px 10px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+}
+.names {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.names input {
+  width: 100%;
+  padding: 16px 10px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+}
+
+.selectOne {
+  display: flex;
+  border: 1px solid #ddd;
+  border-radius: 50px;
+  font-size: 12px;
+  justify-content: space-between;
+  overflow: hidden;
+}
+.selectOne p {
+  padding: 5px 10px;
+}
+
+.selectOne div button {
+  border: 1px solid #ddd;
+  height: 100%;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.selectOne div .yes {
+  border-radius: 50px 0 0 50px;
+  border-left: none;
+}
+.selectOne div .yes.activeYes {
+  background: #00a200;
+  color: #fff;
+}
+.selectOne div .no.activeNo {
+  background: #e20000;
+  color: #fff;
+}
+.unsubscribe{
+  text-align: center;
+  font-size: 14px;
+  color: #929292;
+  font-style: italic;
+}
+
+.sbottom p{
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 8px;
+}
+.signup2 h2{
+  margin-bottom: 20px;
+}
+.secondHome h1{
+  font-size: 30px;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 1000px) {
+  .hero_content h1 {
+    font-size: 28px;
+  }
+  .hero_content h2 {
+    font-size: 16px;
+  }
+  .signup {
+    width: 700px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero_content ul {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .signup {
+    width: 80vw;
+  }
+  .signup h2 {
+    font-size: 20px;
+  }
+  .dob-inputs {
+    gap: 15px;
+  }
+
+  .radio-btn {
+    margin: 10px;
+    width: 90px;
+    height: 100px;
+  }
+
+  .gender-box {
+    margin-bottom: -10px;
+  }
+
+  .radio-btn .gender-pic {
+    max-width: 50px;
+  }
+  .btn-pink {
+    font-size: 18px;
+  }
 }

@@ -27,7 +27,7 @@ const About = () => {
             <img src={Info1} alt="" />
           </div>
         </div>
-        <div className="aboutBottom">
+        <div className="aboutBottom" id="about">
           <div className="aboutLeft">
             <img src={Info2} alt="" />
           </div>

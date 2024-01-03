@@ -2,7 +2,7 @@ import { useState } from "react";
 import logo from "../../assets/SS_Main.svg";
 import "./Navbar.css";
 
-const Navbar = () => {
+const Navbar = ({list}) => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const clickham = () => {
@@ -14,17 +14,21 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="navContainer">
         <div className="logo">
-          <img src={logo} alt="" />
+          <a href="#hero">
+            <img src={logo} alt="" />
+          </a>
         </div>
-        <div className="hamburger" onClick={clickham}>
+        {list && (
+          <div className="hamburger" onClick={clickham}>
           <span></span>
           <span></span>
           <span></span>
         </div>
-        <div className={`navLinks${!menuOpen ? " open" : ""}`}>
-          <a href="#">How It Wroks</a>
-          <a href="#">Data Protection</a>
-          <a href="#">FAQs</a>
+        )}
+        <div className={`${list ? "navLinks" : "" } ${!menuOpen ? " open" : ""}`}>
+          {list?.map((item, index) => (
+              <a href={item.id}>{item.text}</a>
+            ))}
         </div>
       </div>
     </nav>

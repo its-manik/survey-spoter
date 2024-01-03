@@ -4,7 +4,7 @@ const Started = () => {
     <section id="started">
       <div>
         <h2>Start earning cash today and sign up for FREE!</h2>
-        <button>Get Started</button>
+        <a href="#hero">Get Started</a>
       </div>
     </section>
   );
