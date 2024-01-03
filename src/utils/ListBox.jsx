@@ -1,40 +1,35 @@
 import React, { useState } from "react";
-import { FaCircleCheck, FaCircle } from "react-icons/fa6";
-import { IoMdArrowDropleft } from "react-icons/io";
+import { FaCircle, FaCircleCheck } from "react-icons/fa6";
+import Button from "./Button";
 const ListBox = ({ data, setselectAll, ...props }) => {
   const { img, heading, list, smallText, review } = data;
 
-  console.log(setselectAll);
-
-  const [selected, setselected] = useState(false);
-  const obj = {
-    img: "img",
-    heading: "Share your opinion with YouGov and get rewarded",
-    list: [
-      " You can get your opinion featured in the news!",
-      "Answer surveys for cash rewards",
-      " Join millions of others in sharing your opinion on politics, sport, entertainment and more",
-    ],
-    smallText:
-      "By clicking Select, you consent to YouGov sending you emails about their survey panel service. You can unsubscribe at any time. Read their Privacy Policy to find out more.",
-  };
+  const [selected, setSelected] = useState(false);
   return (
-    <div className={`listBox ${selected ? "selected" : ""}`} {...props}>
-      <button
-        className={`boxButton ${selected ? "selected" : ""}`}
-        onClick={() => {
-          setselected(!selected);
+    <div className={`listBox`} {...props}>
+      <Button
+        selected={selected}
+        icon={
+          setselectAll ? (
+            <FaCircleCheck />
+          ) : selected ? (
+            <FaCircleCheck />
+          ) : (
+            <FaCircle />
+          )
+        }
+        className={`boxButton ${setselectAll ? "selected" : ""}`}
+        onClick={(e) => {
+          if (e.target.classList.contains("selected")) {
+            e.target.classList.remove("selected");
+            return setSelected(false);
+          } else {
+            e.target.classList.add("selected");
+            return setSelected(true);
+          }
+          console.log(selected);
         }}
-      >
-        {setselectAll ? (
-          <FaCircleCheck />
-        ) : !selected ? (
-          <FaCircle />
-        ) : (
-          <FaCircleCheck />
-        )}
-        <span>{setselectAll ? "SELECTED" : "SECELCT"}</span>
-      </button>
+      />
       <div className="listFlex">
         <div className="listImg">
           <img src={img} alt="" />

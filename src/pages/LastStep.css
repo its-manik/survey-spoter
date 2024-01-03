@@ -94,45 +94,72 @@
   gap: 30px;
 }
 
-.step{
-    display: flex;
-    gap: 20px;
+.step {
+  display: flex;
+  gap: 20px;
 }
 
-.step > .number{
-    width: 38px;
-    height: 38px;
-    background: #45B29B;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    padding: 43px;
-    color: #fff;
-    font-weight: 700;
-    font-size: 50px;
+.step > .number {
+  width: 38px;
+  height: 38px;
+  background: #45b29b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  padding: 43px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 50px;
 }
 
-.stepContent{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    justify-content: center;
+.stepContent {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
 }
 
-.step h2, .step a{
-    font-size: 21px;
-    font-weight: 500;
+.step h2,
+.step a {
+  font-size: 21px;
+  font-weight: 500;
 }
 
-.step a{
-    text-decoration: underline;
-    color: #45b29b;
+.step a {
+  text-decoration: underline;
+  color: #45b29b;
+}
+
+.finalClients {
+  background: #f3f3f5;
+  padding: 30px 0;
+}
+
+.clients {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.client {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  padding: 20px 0;
+  padding-top: 0px;
+}
+
+.client img {
+  width: 160px;
 }
 
 @media screen and (max-width: 1600px) {
   .lastHero {
     height: 40vh;
+  }
+  .lastHeroContent {
+    width: 88%;
   }
 }
 @media screen and (max-width: 1400px) {
@@ -140,12 +167,23 @@
     width: 70%;
   }
   .lastHero {
-    height: 40vh;
+    height: 38vh;
+  }
+  .lastHeroContent {
+    width: 88%;
+  }
+
+  .finalStep > div{
+    width: 60%;
   }
 }
 @media screen and (max-width: 1200px) {
   .lastHero {
-    height: 40vh;
+    height: 35vh;
+  }
+
+  .finalStep > div {
+    width: 55%;
   }
 
   .lastHeroContent {
@@ -169,13 +207,30 @@
   .lastHeroContent button:hover {
     background-color: #369180;
   }
+
+  .finalStep > div {
+    width: 90%;
+    margin: auto;
+    padding: 40px 0;
+  }
+  .lastHero {
+    height: 37vh;
+    background-image: none;
+    background: linear-gradient(#8a1111, #f21f1f);
+  }
+
+  .lastHeroContent button {
+    margin: 10px;
+    background-color: #45b29b;
+  }
 }
 
 @media screen and (max-width: 600px) {
-  .lastHero {
-    height: 30vh;
+  .finalStep > div {
+    width: 97%;
+    margin: auto;
+    padding: 40px 0;
   }
-
   .lastHeroContent {
     width: 98%;
   }
@@ -195,5 +250,20 @@
     font-weight: 600;
     margin-top: 15px;
     display: inline-block;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .client {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px 0;
+    padding-top: 0px;
+  }
+
+  .client img {
+    width: 30vw;
   }
 }

@@ -56,7 +56,7 @@ const Offer = () => {
             <button
               className={`allButton ${setselectAll ? "selected" : ""}`}
               onClick={() => {
-                setSetselectAll(!setselectAll);
+                return setSetselectAll(!setselectAll);
               }}
             >
               {!setselectAll ? <FaCircle /> : <FaCircleCheck />}{" "}

@@ -1,10 +1,12 @@
 import React from "react";
 import "./LastStep.css";
 import Navbar from "../components/Navbar/Navbar";
-import amazon from "../assets/logo-amazon.png";
-import paypal from "../assets/logo-paypal.png";
+import amazon from "../assets/amazon.webp";
+import paypal from "../assets/paypal.webp";
+import { Link, useNavigate } from "react-router-dom";
 
 const LastStep = () => {
+  const navigate = useNavigate()
   return (
     <>
       <Navbar />
@@ -35,7 +37,7 @@ const LastStep = () => {
             <div className="step">
               <div className="number">1</div>
               <div className="stepContent">
-                <a href="www.https://mail.google.com/">Check your emails now</a>
+                <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank">Check your emails now</a>
                 <p>
                   You will have some emails from the companies that you selected
                   just now
@@ -79,6 +81,17 @@ const LastStep = () => {
           </div>
         </div>
       </section>
+      <footer className="offerFooter">
+        <div>
+          <a href="#" className="terms">
+            Terms and Conditions
+          </a>
+          <a href="#">Privacy Policy</a>
+        </div>
+        <p className="corywrite">
+          Copyright Survey Spotter. All rights reserved
+        </p>
+      </footer>
     </>
   );
 };
