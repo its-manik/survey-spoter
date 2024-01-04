@@ -47,10 +47,10 @@ const ListBox = ({ data, setselectAll, ...props }) => {
       </div>
       {!setselectAll ? (
         <Button
-          text={`SELECT`}
+        text={`SELECT`}
+        icon={<FaCircle />}
           onClick={() => setSelected(!selected)}
           className={`boxButton ${selected ? "none" : ""}`}
-          icon={<FaCircle />}
         />
       ) : (
         ""
@@ -59,17 +59,16 @@ const ListBox = ({ data, setselectAll, ...props }) => {
       {setselectAll &&
         (none ? (
           <Button
-            text={`SELECT`}
+          text={`SELECT`}
             onClick={() => setSelected(!selected)}
             className={`boxButton ${selected ? "none" : ""}`}
             icon={<FaCircle />}
           />
         ) : (
           <Button
-            text={`SELECTED`}
+          text={`SELECTED`}
             onClick={() => {
               setNone(!none);
-              console.log("caldk");
               setSelected(!selected);
             }}
             className={`boxButton selected ${selected && "none"}`}
@@ -78,8 +77,8 @@ const ListBox = ({ data, setselectAll, ...props }) => {
         ))}
       {selected && (
         <Button
-          text={`SELECTED`}
-          onClick={() => {setSelected(!selected); setNone(!true)}}
+        text={`SELECTED`}
+          onClick={() => setSelected(!selected)}
           className={`boxButton ${selected ? "selected" : ""}`}
           icon={setselectAll || selected ? <FaCircleCheck /> : <FaCircle />}
         />
