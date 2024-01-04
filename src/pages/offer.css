@@ -92,21 +92,6 @@
   justify-content: center;
   gap: 10px;
 }
-.boxButton {
-  position: absolute;
-  right: 30px;
-  bottom: 90px;
-  background: #408c99;
-  width: 320px;
-  height: 70px;
-  border-radius: 5px;
-  font-size: 20px;
-  color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-}
 
 .boxButton.selected {
   position: absolute;
@@ -411,21 +396,23 @@
 
   .listFlex {
     flex-direction: column;
+    margin-bottom: 100px;
   }
 }
 
 @media screen and (max-width: 1000px) {
+  .listFlex {
+    margin-bottom: 0px;
+  }
   .boxButton {
+    position: static;
     width: 95%;
-    right: 2.5%;
+    margin: auto;
   }
   .boxButton.selected {
+    position: static;
     width: 95%;
-    right: 2.5%;
-  }
-  .boxButton {
-    width: 95%;
-    right: 2.5%;
+    margin: auto;
   }
   .innerBtn {
     display: none;
@@ -474,7 +461,11 @@
   .offerHeroContent h2 span {
     font-weight: 600;
   }
-
+  .listBoxes{
+    min-width: 95%;
+    margin: 0 auto 0px;
+    margin-left: 8px;
+  }
   .listImg {
     flex-direction: column;
     align-items: center;
