@@ -173,7 +173,7 @@
     width: 88%;
   }
 
-  .finalStep > div{
+  .finalStep > div {
     width: 60%;
   }
 }
@@ -273,12 +273,41 @@
     height: 40vh;
   }
 
-  .lastHeroContent{
-    padding: 10px;
+  .lastHeroContent {
+    padding: 0px;
   }
 
-  .lastHeroContent > h2{
+  .lastHeroContent h1 {
+    font-size: 24px;
+  }
+  .lastHeroContent h2 {
+    width: auto;
+  }
+  .client {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding: 20px 0;
+    padding-top: 0px;
+  }
+  .client img {
+    width: 140px;
+  }
+  .step {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .stepContent {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .lastHeroContent > h2 {
     font-size: 14px;
   }
 }
-
