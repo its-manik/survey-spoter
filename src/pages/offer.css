@@ -124,7 +124,6 @@
   gap: 10px;
 }
 
-
 .innerBtn {
   position: absolute;
   right: -100px;
@@ -283,21 +282,14 @@
   font-weight: 600;
 }
 
-
 @media screen and (max-width: 1800px) {
   .offerHero {
     height: 40vh;
-  }
-  .listBox{
-    height: 400px;
   }
 }
 @media screen and (max-width: 1600px) {
   .offerHero {
     height: 40vh;
-  }
-  .listBox{
-    height: 400px;
   }
 }
 
@@ -313,7 +305,11 @@
   .offerHero {
     height: 40vh;
   }
-
+  .listBox {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
   .offerHeroContent {
     width: 98%;
   }
@@ -321,10 +317,8 @@
     width: 80% !important;
   }
   .listBox {
-    height: 450px;
     position: relative;
   }
-
 
   .listImg {
     width: 100%;
@@ -339,7 +333,6 @@
   .listFlex {
     flex-direction: column;
   }
-
 }
 
 @media screen and (max-width: 1000px) {
@@ -347,7 +340,7 @@
     width: 95%;
     right: 2.5%;
   }
- .boxButton.selected {
+  .boxButton.selected {
     width: 95%;
     right: 2.5%;
   }
@@ -355,17 +348,15 @@
     width: 95%;
     right: 2.5%;
   }
-  .innerBtn{
+  .innerBtn {
     display: none;
   }
 }
 @media screen and (max-width: 800px) {
   .listBox {
-    height: 410px;
-    position: relative;
     padding: 10px;
   }
-  .listBox h2{
+  .listBox h2 {
     display: none;
   }
   .listBox .ul {
@@ -378,7 +369,7 @@
 @media screen and (max-width: 600px) {
   .offerHero {
     background-image: none;
-    background: #4CA796;
+    background: #4ca796;
     height: 30vh;
   }
 
@@ -431,50 +422,18 @@
   }
 }
 
-
 @media screen and (max-width: 500px) {
-  .listBoxes{
+  .listBoxes {
     width: 90% !important;
   }
 
-  .listBoxes .listBox:nth-child(1){
-    max-height: 350px;
-  }
-  .listBoxes .listBox:nth-child(2){
-    max-height: 355px;
-  }
-  .listBoxes .listBox:nth-child(3){
-    max-height: 355px;
-  }
-  .listBoxes .listBox:nth-child(8){
-    min-height: 450px;
-  }
-  .listBoxes .listBox:nth-child(9){
-    max-height: 380px;
-    /* min-height: 400px; */
-  }
-  .listBoxes .listBox:nth-child(10){
-    min-height: 470px;
-  }
-  .listBoxes .listBox:nth-child(11){
-    min-height: 470px;
-  }
-  .listBoxes .listBox:nth-child(12){
-    max-height: 390px;
-    /* display: none; */
-  }
-  .listBoxes .listBox:nth-child(14){
-    max-height: 370px;
-    /* display: none; */
-  }
-
-  .listBox{
+  .listBox {
     padding: 10px;
   }
-  .listBox h2{
+  .listBox h2 {
     display: none;
   }
-  
+
   .listContent h2 {
     font-size: 24px;
     margin-bottom: 10px;
@@ -487,75 +446,21 @@
     line-height: 22px;
   }
 
-
-  
   .listContent .ul > div svg {
     fill: #45b29b;
   }
 }
 
-
 @media screen and (max-width: 400px) {
-  .listBoxes .listBox:nth-child(1){
-    max-height: 400px;
+  .listBox .boxButton {
+    position: static;
   }
-  .listBoxes .listBox:nth-child(2){
-    min-height: 430px;
-    max-height: 450px;
+  .listBoxes {
+    min-width: 100%;
   }
-  .listBoxes .listBox:nth-child(3){
-    min-height: 420px;
-    max-height: 385px;
-  }
-  .listBoxes .listBox:nth-child(3) .boxButton{
-    margin-bottom: 20px;
-  }
-  .listBoxes .listBox:nth-child(4){
-    min-height: 470px;
-    max-height: 450px;
-  }
-  .listBoxes .listBox:nth-child(5){
-    min-height: 415px;
-    max-height: 450px;
-  }
-  .listBoxes .listBox:nth-child(6){
-    min-height: 465px;
-    max-height: 450px;
-  }
-  .listBoxes .listBox:nth-child(7){
-    min-height: 420px;
-    max-height: 450px;
-  }
-  .listBoxes .listBox:nth-child(8){
-    min-height: 495px;
-    max-height: 450px;
-  }
-  .listBoxes .listBox:nth-child(9){
-    min-height: 390px;
-    max-height: 400px;
-  }
-  .listBoxes .listBox:nth-child(10){
-    min-height: 495px;
-    max-height: 450px;
-  }
-  .listBoxes .listBox:nth-child(11){
-    min-height: 520px;
-    max-height: 450px;
-  }
-  .listBoxes .listBox:nth-child(12){
-    min-height: 450px;
-    max-height: 450px;
-  }
-  .listBoxes .listBox:nth-child(13){
-    min-height: 450px;
-    max-height: 450px;
-  }
-  .listBoxes .listBox:nth-child(14){
-    min-height: 430px;
-    max-height: 450px;
-  }
-  .final button{
+
+  .final button {
     font-size: 24px;
-    padding: 15px
+    padding: 15px;
   }
 }

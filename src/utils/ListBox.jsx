@@ -9,21 +9,7 @@ const ListBox = ({ data, setselectAll, ...props }) => {
   const [selected, setSelected] = useState(false);
   return (
     <div className={`listBox`} {...props}>
-      <Button
-        className={`boxButton ${setselectAll ? "selected" : ""}`}
-        onClick={(e) => {
-          if (e.target.classList.contains("selected")) {
-            e.target.classList.remove("selected");
-            return setSelected(false)
-          } else {
-            e.target.classList.add("selected");
-            return setSelected(true)
-          }
-        }}
-        selected={selected}
-        setselectAll={setselectAll}
-        icon={setselectAll || selected ?<FaCircleCheck /> : <FaCircle />}
-      />
+
       <div className="listFlex">
         <div className="listImg">
           <img src={img} alt="" />
@@ -49,6 +35,21 @@ const ListBox = ({ data, setselectAll, ...props }) => {
           </div>
         </div>
       </div>
+      <Button
+        className={`boxButton ${setselectAll ? "selected" : ""}`}
+        onClick={(e) => {
+          if (e.target.classList.contains("selected")) {
+            e.target.classList.remove("selected");
+            return setSelected(false)
+          } else {
+            e.target.classList.add("selected");
+            return setSelected(true)
+          }
+        }}
+        selected={selected}
+        setselectAll={setselectAll}
+        icon={setselectAll || selected ?<FaCircleCheck /> : <FaCircle />}
+      />
       <p>{smallText}</p>
     </div>
   );
