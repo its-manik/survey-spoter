@@ -305,6 +305,21 @@
 
 
 @media screen and (max-width: 768px) {
+  .hero_content{
+    padding: 0 20px;
+  }
+  
+.heroPara {
+  color: #fff;
+  width: auto;
+  font-size: 14px;
+  margin: -15px auto 20px;
+}
+  .hero_content h1 {
+    font-size: 32px;
+    margin-top: 25px;
+    font-weight: 500;
+  }
   .hero {
     background-image: linear-gradient(to bottom right, #147162, #2db39e);
     background-blend-mode: normal;

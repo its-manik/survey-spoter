@@ -20,18 +20,51 @@ import star from "../assets/stars-4.5.svg";
 import { FaCircle, FaCircleCheck } from "react-icons/fa6";
 import { IoMdArrowDropleft } from "react-icons/io";
 import { useNavigate } from "react-router-dom";
+import { IoMdClose } from "react-icons/io";
 
 const Offer = () => {
   const navigate = useNavigate();
 
   const [setselectAll, setSetselectAll] = useState(false);
+  const [popup, setPopup] = useState(false);
 
   const finalStep = () => {
-    return navigate("/laststep");
+    return setPopup(!popup);
   };
 
   return (
     <>
+      {popup ? (
+        <div className="popupWrapper">
+          <div className="popup">
+            <span className="close" onClick={() => setPopup(!popup)}>
+              <IoMdClose />
+            </span>
+            <div className="stepHeading">
+              <h2>Please enter more information</h2>
+            </div>
+            <p>
+              {" "}
+              One or more of the survey companies you have chosen would like to
+              know more information in order to complete signup. Please provide
+              your address to start earning
+            </p>
+            <div className="formBox">
+              <h3>
+                Postcode <span>*</span>
+              </h3>
+              <div className="inputs">
+                <input type="text" placeholder="Enter The Code" />
+                <button className="findAddress">Find Address</button>
+                <input type="text" placeholder="Select Your Address" />
+                <button className="continue">CONTINUE</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      ) : (
+        ""
+      )}
       <Navbar />
       <div id="navbar"></div>
       <section className="offerHero">
@@ -67,7 +100,7 @@ const Offer = () => {
         </div>
         <div className="listBoxes">
           <ListBox
-          setselectAll={setselectAll}
+            setselectAll={setselectAll}
             className={`${setselectAll ? "listBox selected" : "listBox"}`}
             data={{
               img: YouGov,
@@ -82,7 +115,7 @@ const Offer = () => {
             }}
           />
           <ListBox
-          setselectAll={setselectAll}
+            setselectAll={setselectAll}
             className={`${setselectAll ? "listBox selected" : "listBox"}`}
             data={{
               img: branded,
@@ -99,7 +132,7 @@ const Offer = () => {
             }}
           />
           <ListBox
-          setselectAll={setselectAll}
+            setselectAll={setselectAll}
             className={`${setselectAll ? "listBox selected" : "listBox"}`}
             data={{
               img: mobrog,
@@ -115,7 +148,7 @@ const Offer = () => {
             }}
           />
           <ListBox
-          setselectAll={setselectAll}
+            setselectAll={setselectAll}
             className={`${setselectAll ? "listBox selected" : "listBox"}`}
             data={{
               img: pureprofile,
@@ -130,7 +163,7 @@ const Offer = () => {
             }}
           />
           <ListBox
-          setselectAll={setselectAll}
+            setselectAll={setselectAll}
             className={`${setselectAll ? "listBox selected" : "listBox"}`}
             data={{
               img: toluna,
@@ -145,7 +178,7 @@ const Offer = () => {
             }}
           />
           <ListBox
-          setselectAll={setselectAll}
+            setselectAll={setselectAll}
             className={`${setselectAll ? "listBox selected" : "listBox"}`}
             data={{
               img: prime,
@@ -160,7 +193,7 @@ const Offer = () => {
             }}
           />
           <ListBox
-          setselectAll={setselectAll}
+            setselectAll={setselectAll}
             className={`${setselectAll ? "listBox selected" : "listBox"}`}
             data={{
               img: cashback,
@@ -177,7 +210,7 @@ const Offer = () => {
             }}
           />
           <ListBox
-          setselectAll={setselectAll}
+            setselectAll={setselectAll}
             className={`${setselectAll ? "listBox selected" : "listBox"}`}
             data={{
               img: dosh,
@@ -193,7 +226,7 @@ const Offer = () => {
             }}
           />
           <ListBox
-          setselectAll={setselectAll}
+            setselectAll={setselectAll}
             className={`${setselectAll ? "listBox selected" : "listBox"}`}
             data={{
               img: view,
@@ -210,7 +243,7 @@ const Offer = () => {
             }}
           />
           <ListBox
-          setselectAll={setselectAll}
+            setselectAll={setselectAll}
             className={`${setselectAll ? "listBox selected" : "listBox"}`}
             data={{
               img: maxi,
@@ -226,7 +259,7 @@ const Offer = () => {
             }}
           />
           <ListBox
-          setselectAll={setselectAll}
+            setselectAll={setselectAll}
             className={`${setselectAll ? "listBox selected" : "listBox"}`}
             data={{
               img: isay,
@@ -243,7 +276,7 @@ const Offer = () => {
             }}
           />
           <ListBox
-          setselectAll={setselectAll}
+            setselectAll={setselectAll}
             className={`${setselectAll ? "listBox selected" : "listBox"}`}
             data={{
               img: inboxx,
@@ -259,7 +292,7 @@ const Offer = () => {
             }}
           />
           <ListBox
-          setselectAll={setselectAll}
+            setselectAll={setselectAll}
             className={`${setselectAll ? "listBox selected" : "listBox"}`}
             data={{
               img: swagbucks,
@@ -275,7 +308,7 @@ const Offer = () => {
             }}
           />
           <ListBox
-          setselectAll={setselectAll}
+            setselectAll={setselectAll}
             className={`${setselectAll ? "listBox selected" : "listBox"}`}
             data={{
               img: green,

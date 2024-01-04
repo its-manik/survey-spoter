@@ -3,7 +3,7 @@ import logo from "../../assets/SS_Main.svg";
 import "./Navbar.css";
 
 const Navbar = ({list}) => {
-  const [menuOpen, setMenuOpen] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(true);
 
   const clickham = () => {
     setMenuOpen(!menuOpen);
