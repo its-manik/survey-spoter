@@ -62,6 +62,7 @@ const Hero = () => {
                   />
                   <span className="radio-btn male">
                     <img src={Check} alt="check" aria-readonly  />
+                    <div className="backOfCheck"></div>
                     <div className="gender-pic">
                     </div>
                   </span>
