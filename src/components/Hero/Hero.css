@@ -137,27 +137,20 @@
   display: none;
   z-index: 100;
 }
-.radio-btn > .backOfCheck {
-  width: 18px;
-  height: 18px;
-  position: absolute;
-  top: 20px;
-  left: -9px;
-  transform: translateY(-50%);
-  border-radius: 50px;
-  padding: 3px;
-  pointer-events: none;
-  background-color: white;
-  border: 1px solid #ddd;
-}
+
 
 .radio-btn .gender-pic {
   max-width: 60px;
 }
 
 .custom-radio > input:checked + .radio-btn {
-  background: #d7f1ec;
+  background-color: #d7f1ec;
   border: 2px solid #348c74;
+}
+.custom-radio > input:checked + .radio-btn.female {
+ 
+    background-color: #d7f1ec;
+
 }
 .custom-radio > input:checked + .radio-btn > img {
   display: block;
