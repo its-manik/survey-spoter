@@ -188,6 +188,7 @@
 }
 
 .btn-pink {
+  text-align: center;
   border-radius: 0.2em;
   box-sizing: border-box;
   box-shadow: inset 0 -0.6em 1em -0.35em rgba(0, 0, 0, 0.17),
@@ -204,6 +205,7 @@
 .btn-pink {
   background-color: #df4f71;
   color: #fff !important;
+  text-align: center;
 }
 
 .signup-notice {
