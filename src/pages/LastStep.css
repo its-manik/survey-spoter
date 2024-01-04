@@ -266,9 +266,6 @@
   .client img {
     width: 30vw;
   }
-}
-
-@media screen and (max-width: 350px) {
   .lastHero {
     height: 40vh;
   }
@@ -311,3 +308,4 @@
     font-size: 14px;
   }
 }
+
