@@ -27,9 +27,15 @@ const Offer = () => {
 
   const [setselectAll, setSetselectAll] = useState(false);
   const [popup, setPopup] = useState(false);
+  const [code, setCode] = useState("");
+  const [address, setAddress] = useState("");
 
   const finalStep = () => {
     return setPopup(!popup);
+  };
+  const reDirect = () => {
+    if (!address && !code) return;
+    return navigate("/laststep");
   };
 
   return (
@@ -54,10 +60,18 @@ const Offer = () => {
                 Postcode <span>*</span>
               </h3>
               <div className="inputs">
-                <input type="text" placeholder="Enter The Code" />
+                <div className="innerInputs">
+                <input
+                  type="text"
+                  placeholder="Enter The Code"
+                  onChange={(e) => setCode(e.target.value)}
+                  value={code}
+                />
                 <button className="findAddress">Find Address</button>
-                <input type="text" placeholder="Select Your Address" />
-                <button className="continue">CONTINUE</button>
+                </div>
+                <button className="continue" onClick={reDirect}>
+                  CONTINUE
+                </button>
               </div>
             </div>
           </div>
