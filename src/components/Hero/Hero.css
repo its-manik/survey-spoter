@@ -164,12 +164,12 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 5px;
-  gap: 15px;
+  gap: 25px;
 }
 
 .dob select {
   padding: 17px 10px;
-  width: 140px;
+  width: 33%;
   border: 1px solid #dedede;
   border-radius: 4px;
   background: #fff;
