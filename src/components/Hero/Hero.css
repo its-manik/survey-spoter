@@ -305,6 +305,13 @@
 
 
 @media screen and (max-width: 768px) {
+  .dob select {
+    font-size: 14px;
+  }
+  .dob select option {
+    margin-right: 20px;
+    display: none;
+  }
   .hero_content{
     padding: 0 20px;
   }
