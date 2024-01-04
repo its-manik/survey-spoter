@@ -3,7 +3,7 @@ import Male from "../../assets/male-icon.svg";
 import Female from "../../assets/female-icon.svg";
 import Check from "../../assets/check-solid.svg";
 import { useState } from "react";
-import {useNavigate, useHistory } from "react-router-dom";
+import { useNavigate, useHistory } from "react-router-dom";
 
 const Hero = () => {
   const [day, setDay] = useState("");
@@ -16,7 +16,6 @@ const Hero = () => {
   const [gender, setGender] = useState("");
 
   const [isSignup, setIsSignup] = useState(false);
-
 
   const navigate = useNavigate();
 
@@ -274,6 +273,12 @@ const Hero = () => {
               🔒 Your data is always protected with us. Read our Privacy Policy
             </span>
           </form>
+          <p className="heroPara">
+            *The amount of money you can earn depends on the number of survey
+            panels you register with, and how many surveys you complete. As an
+            example, an average survey payout is £3. By taking 5 surveys per
+            day, 5 days a week, you could earn £300/month.
+          </p>
         </div>
       ) : (
         <div className="secondHome">
@@ -312,7 +317,7 @@ const Hero = () => {
               <div className="selectOne">
                 <p>
                   To consent to receive daily emails about new survey companies
-                  from <br /> SurveySpotter, click Yes
+                  from SurveySpotter, click Yes
                 </p>
                 <div>
                   <button
@@ -348,6 +353,12 @@ const Hero = () => {
               </span>
             </div>
           </form>
+          <p className="heroPara">
+            *The amount of money you can earn depends on the number of survey
+            panels you register with, and how many surveys you complete. As an
+            example, an average survey payout is £3. By taking 5 surveys per
+            day, 5 days a week, you could earn £300/month.
+          </p>
         </div>
       )}
     </div>

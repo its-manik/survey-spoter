@@ -10,6 +10,7 @@ const LastStep = () => {
   return (
     <>
       <Navbar />
+      <div id="navbar"></div>
       <section className="lastHero">
         <div className="lastHeroContent">
           <h1>LAST STEP: IMPORTANT! PLEASE CHECK YOUR EMAILS NOW</h1>

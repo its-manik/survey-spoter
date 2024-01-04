@@ -45,5 +45,14 @@ img {
     .clientBox{
         flex-wrap: wrap;
     }
-  
+    #clients h2{
+        font-size: 17px;
+    }
+    .clientBox{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 32px 40px;
+    }
+    
   }

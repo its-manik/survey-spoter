@@ -31,6 +31,13 @@
   font-weight: 500;
 }
 
+.heroPara {
+  color: #fff;
+  width: 540px;
+  font-size: 14px;
+  margin: -15px auto 20px;
+}
+
 .hero_content h1 span {
   font-weight: 700;
 }
@@ -165,6 +172,7 @@
   width: 140px;
   border: 1px solid #dedede;
   border-radius: 4px;
+  background: #fff;
 }
 
 .btn-pink {
@@ -232,11 +240,15 @@
 }
 .selectOne p {
   padding: 5px 10px;
+  width: 100%;
+}
+.selectOne div {
+  width: 25%;
+  display: flex;
 }
 
 .selectOne div button {
   border: 1px solid #ddd;
-  height: 100%;
   padding: 10px;
   font-size: 16px;
 }
@@ -244,6 +256,11 @@
 .selectOne div .yes {
   border-radius: 50px 0 0 50px;
   border-left: none;
+}
+.selectOne div .no {
+  border-radius: 0px 50px 50px 0px;
+  border-left: none;
+  border-right: none;
 }
 .selectOne div .yes.activeYes {
   background: #00a200;
@@ -253,25 +270,26 @@
   background: #e20000;
   color: #fff;
 }
-.unsubscribe{
+.unsubscribe {
   text-align: center;
   font-size: 14px;
   color: #929292;
   font-style: italic;
 }
 
-.sbottom p{
+.sbottom p {
   font-size: 14px;
   text-align: center;
   margin-bottom: 8px;
 }
-.signup2 h2{
+.signup2 h2 {
   margin-bottom: 20px;
 }
-.secondHome h1{
+.secondHome h1 {
   font-size: 30px;
   font-weight: 700;
 }
+
 
 @media screen and (max-width: 1000px) {
   .hero_content h1 {
@@ -285,12 +303,22 @@
   }
 }
 
+
 @media screen and (max-width: 768px) {
+  .hero {
+    background-image: linear-gradient(to bottom right, #147162, #2db39e);
+    background-blend-mode: normal;
+    background-color: none;
+    min-height: 85vh;
+  }
+  .hero_content h1 {
+    line-height: 30px;
+    margin-bottom: 10px;
+  }
   .hero_content ul {
     font-size: 14px;
     line-height: 22px;
   }
-
   .signup {
     width: 80vw;
   }
@@ -300,7 +328,12 @@
   .dob-inputs {
     gap: 15px;
   }
-
+  .heroPara {
+    color: #fff;
+    max-width: 80%;
+    font-size: 14px;
+    margin: -15px auto 20px;
+  }
   .radio-btn {
     margin: 10px;
     width: 90px;
@@ -316,5 +349,47 @@
   }
   .btn-pink {
     font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .signup2 {
+    width: 96vw;
+    padding: 10px;
+  }
+  
+  .selectOne p {
+    padding: 5px 10px;
+    width: 100%;
+    padding-right: 5px;
+  }
+  .selectOne div {
+    width: 25%;
+    display: flex;
+  }
+
+  .selectOne div button {
+    border: 1px solid #ddd;
+    padding: 10px;
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .signup2 {
+    width: 96vw;
+    padding: 10px;
+  }
+  .selectOne p {
+    padding: 5px 25px 5px 20px;
+    width: 100%;
+    padding-right: 5px;
+  }
+  .selectOne div {
+    width: 30%;
+    display: flex;
+  }
+  .selectOne {
+    min-width: 98%;
   }
 }

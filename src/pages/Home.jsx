@@ -12,6 +12,7 @@ function App() {
     <div>
       <Navbar list={[{text: "How It Wroks", id: "#howItWorks"},{text: "Data Protection", id: "#about"}, {text: "FAQs", id: "#faqs"}]} />
       <main>
+        <div id="navbar"></div>
         <Hero />
         <Clients />
         <HowItWorks />

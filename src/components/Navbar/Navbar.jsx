@@ -11,10 +11,10 @@ const Navbar = ({list}) => {
   };
 
   return (
-    <nav className="navbar">
+    <nav className="navbar" >
       <div className="navContainer">
         <div className="logo">
-          <a href="#hero">
+          <a href="#navbar">
             <img src={logo} alt="" />
           </a>
         </div>

@@ -33,6 +33,7 @@ const Offer = () => {
   return (
     <>
       <Navbar />
+      <div id="navbar"></div>
       <section className="offerHero">
         <div className="offerHeroContent">
           <h1>NEXT STEP: SELECT SURVEY PANELS TO JOIN</h1>

@@ -198,7 +198,6 @@
   text-align: center;
   padding-top: 30px;
 }
-
 .listHeading h2 {
   margin-bottom: 10px;
 }
@@ -208,7 +207,7 @@
 }
 
 .allButton {
-  background: #408c99;
+  background: #204349;
   width: 320px;
   height: 70px;
   border-radius: 5px;
@@ -223,7 +222,6 @@
 }
 
 .allButton.selected {
-  background: #5cbf2a;
   width: 320px;
   height: 70px;
   border-radius: 5px;
@@ -284,6 +282,7 @@
   color: #afafaf;
   font-weight: 600;
 }
+
 
 @media screen and (max-width: 1800px) {
   .offerHero {
