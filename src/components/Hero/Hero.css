@@ -108,6 +108,17 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  background-repeat: no-repeat;
+  background-size: 50px;
+  background-position: center center;
+}
+
+.male{
+  background-image: url(../../assets/male-icon.svg);
+}
+
+.female{
+  background-image: url(../../assets/female-icon.svg);
 }
 
 .radio-btn > img {

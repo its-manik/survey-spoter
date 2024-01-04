@@ -267,3 +267,18 @@
     width: 30vw;
   }
 }
+
+@media screen and (max-width: 400px) {
+  .lastHero {
+    height: 40vh;
+  }
+
+  .lastHeroContent{
+    padding: 10px;
+  }
+
+  .lastHeroContent > h2{
+    font-size: 14px;
+  }
+}
+

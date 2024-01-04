@@ -71,11 +71,10 @@ const Hero = () => {
                     value=""
                     onChange={(e) => setGender(e.target.value)}
                   />
-                  <span className="radio-btn">
-                    <img src={Check} alt="check" />
+                  <span className="radio-btn male">
+                    <img src={Check} alt="check" aria-readonly  />
                     <div className="backOfCheck"></div>
                     <div className="gender-pic">
-                      <img src={Male} alt="Male" />
                     </div>
                   </span>
                   <span className="gender-type">Male</span>
@@ -90,11 +89,10 @@ const Hero = () => {
                     value=""
                     onChange={(e) => setGender(e.target.value)}
                   />
-                  <span className="radio-btn">
+                  <span className="radio-btn female">
                     <img src={Check} alt="check" />
                     <div className="backOfCheck"></div>
                     <div className="gender-pic">
-                      <img src={Female} alt="Female" />
                     </div>
                   </span>
                   <span className="gender-type">Female</span>
