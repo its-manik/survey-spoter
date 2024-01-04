@@ -383,7 +383,7 @@
 }
 
 @media screen and (max-width: 500px) {
-  .signup2 {
+  .signup2, .signup {
     width: 96vw;
     padding: 10px;
   }
@@ -405,9 +405,9 @@
   }
 }
 
-@media screen and (max-width: 500px) {
-  .signup2 {
-    width: 96vw;
+@media screen and (max-width: 400px) {
+  .signup, .signup2 {
+    width: 100vw;
     padding: 10px;
   }
   .selectOne p {
