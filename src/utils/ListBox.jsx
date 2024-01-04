@@ -1,14 +1,24 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { FaCircle, FaCircleCheck } from "react-icons/fa6";
 import Button from "./Button";
 const ListBox = ({ data, setselectAll, ...props }) => {
   const { img, heading, list, smallText, review } = data;
 
-  console.log(setselectAll);
-
   const [selected, setSelected] = useState(false);
+  const [none, setNone] = useState(false);
+
+  function selectFunc() {
+    console.log(selected);
+    return setSelected(!selected);
+  }
+
+  useEffect(() => {
+    return setNone((prev) => (setselectAll ? false : true));
+  }, [setselectAll]);
+
   return (
     <div className={`listBox`} {...props}>
+      <div className="transparent" onClick={selectFunc}></div>
 
       <div className="listFlex">
         <div className="listImg">
@@ -35,21 +45,44 @@ const ListBox = ({ data, setselectAll, ...props }) => {
           </div>
         </div>
       </div>
-      <Button
-        className={`boxButton ${setselectAll ? "selected" : ""}`}
-        onClick={(e) => {
-          if (e.target.classList.contains("selected")) {
-            e.target.classList.remove("selected");
-            return setSelected(false)
-          } else {
-            e.target.classList.add("selected");
-            return setSelected(true)
-          }
-        }}
-        selected={selected}
-        setselectAll={setselectAll}
-        icon={setselectAll || selected ?<FaCircleCheck /> : <FaCircle />}
-      />
+      {!setselectAll ? (
+        <Button
+        text={`SELECT`}
+        icon={<FaCircle />}
+          onClick={() => setSelected(!selected)}
+          className={`boxButton ${selected ? "none" : ""}`}
+        />
+      ) : (
+        ""
+      )}
+
+      {setselectAll &&
+        (none ? (
+          <Button
+          text={`SELECT`}
+            onClick={() => setSelected(!selected)}
+            className={`boxButton ${selected ? "none" : ""}`}
+            icon={<FaCircle />}
+          />
+        ) : (
+          <Button
+          text={`SELECTED`}
+            onClick={() => {
+              setNone(!none);
+              setSelected(!selected);
+            }}
+            className={`boxButton selected ${selected && "none"}`}
+            icon={<FaCircleCheck />}
+          />
+        ))}
+      {selected && (
+        <Button
+        text={`SELECTED`}
+          onClick={() => setSelected(!selected)}
+          className={`boxButton ${selected ? "selected" : ""}`}
+          icon={setselectAll || selected ? <FaCircleCheck /> : <FaCircle />}
+        />
+      )}
       <p>{smallText}</p>
     </div>
   );
